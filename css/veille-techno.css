@@ -41,12 +41,12 @@
 
 @font-face {
     font-family: "eina2";
-    src: url(Fonts/Eina-bold2.otf);
+    src: url(../fonts/Eina-bold2.otf);
 }
 
 @font-face {
     font-family: "eina";
-    src: url(Fonts/Eina.otf);
+    src: url(../fonts/Eina.otf);
 }
 html{
     scroll-behavior: smooth;
@@ -146,20 +146,19 @@ span {
 
 /* AVTR VISION*/
 
-#vision{
+#veille{
     padding: 150px 0;
 }
-.vision-box{
+.veille-box{
     width: 80%;
     margin: auto;
 }
-.vision h1{
+.veille h1{
     font-size: 25px;
     color: #BDA0FF;
     font-family: 'eina2';
 
 }
-
 
 /*Bouttons*/
 
@@ -188,20 +187,3 @@ span {
   .btn:active {
     transform: translateY(-1px);
   }
-
-
-
-
-
-#neuralink{
-    padding: 150px 0;
-}
-.neuralink-box{
-    width: 80%;
-    margin: auto;
-}
-.neuralink h1{
-    font-size: 25px;
-    color: #BDA0FF;
-    font-family: 'eina2';
-}

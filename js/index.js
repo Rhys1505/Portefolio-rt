@@ -14,6 +14,7 @@ var typed = new Typed(".auto-typed", {
   backSpeed: 30,
   looped: true,
 });
+
 //projets
 document.addEventListener("DOMContentLoaded", () => {
   const sliderContainer = document.querySelector(".slider-container");
