@@ -5,35 +5,42 @@
     font-family: "eina";
 
 }
+
+p {
+    text-align: justify;
+}
+
 /*Scrolling animation_*/
 
-@keyframes appear{
-    from{
+@keyframes appear {
+    from {
         opacity: 0;
-        scale : 0.5;
+        scale: 0.5;
     }
-    to{
-        opacity : 1;
+    to {
+        opacity: 1;
         scale: 1;
     }
 }
-@keyframes appear-2{
-    from{
+
+@keyframes appear-2 {
+    from {
         opacity: 0;
         transform: translateX(-100px);
     }
-    to{
-        opacity : 1;
+    to {
+        opacity: 1;
         transform: translateX(0px);
     }
 }
-@keyframes appear-3{
-    from{
+
+@keyframes appear-3 {
+    from {
         opacity: 0;
         transform: translateX(100px);
     }
-    to{
-        opacity : 1;
+    to {
+        opacity: 1;
         transform: translateX(0px);
     }
 }
@@ -48,13 +55,16 @@
     font-family: "eina";
     src: url(../fonts/Eina.otf);
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-header{
+
+header {
     padding: 10px 5%;
 
 }
+
 header a {
     color: #fff;
     text-decoration: none;
@@ -62,8 +72,8 @@ header a {
 
 body {
     color: #fff;
-    background: rgb(18,14,31);
-    background: linear-gradient(90deg, rgba(18,14,31,1) 0%, rgba(17,17,19,1) 100%); 
+    background: rgb(18, 14, 31);
+    background: linear-gradient(90deg, rgba(18, 14, 31, 1) 0%, rgba(17, 17, 19, 1) 100%);
 }
 
 .text-logo {
@@ -71,15 +81,17 @@ body {
     font-size: 40px;
     transition: 0.5s;
 }
-.text-logo:hover{
+
+.text-logo:hover {
     transform: translateY(-8px);
 }
+
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    
+
 }
 
 nav ul li {
@@ -118,7 +130,7 @@ span {
 
 
 /* VEILLE TECHNO */
-   
+
 
 .underline-veille {
     position: relative;
@@ -133,31 +145,141 @@ span {
     border-bottom: 3.5px solid #BDA0FF; /* Ajuster la couleur et l'épaisseur de la ligne */
 }
 
-.veille-title{
-    color: #BDA0FF;
+.veille-title {
     font-family: 'eina2';
-    font-size: 35px;
-    animation : appear 0.3s linear;
-    animation-timeline: view() ;
+    font-size: 50px;
+    animation: appear 0.3s linear;
+    animation-timeline: view();
     animation-range: entry 0% cover 40%;
     padding: 150px 0;
     text-align: center;
 }
 
-/* AVTR VISION*/
-
-#veille{
-    padding: 150px 0;
-}
-.veille-box{
+.veille {
     width: 80%;
     margin: auto;
 }
-.veille h1{
-    font-size: 25px;
-    color: #BDA0FF;
-    font-family: 'eina2';
 
+.veille h1 {
+    font-size: 30px;
+    font-family: "eina2";
+}
+
+.veille-title {
+    font-family: "eina2";
+}
+
+.part1 {
+    padding: 150px 0;
+    width: 80%;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+}
+
+.part1 h1 {
+    padding: 15px 0;
+    font-size: 50px;
+    text-align: center;
+    margin-right: 100px;
+}
+
+.part1 p {
+    width: 90%;
+    padding: 15px 0;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.part1 span {
+    color: #BDA0FF;
+}
+
+.title h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.title span {
+    color: #fff;
+}
+
+.part2 {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Espace entre les deux colonnes */
+    margin-top: 75px;
+}
+
+.part2 h1 {
+    text-align: center;
+}
+
+.box1, .box2 {
+    width: 420px;
+    height: 350px;
+    box-shadow: 0px 5px 10px black;
+    padding: 20px;
+    background-color: #120E1F;
+    border-radius: 8px;
+    transition: 1s;
+    animation: appear 0.3s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.box1 p {
+    text-align: justify;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.box2 ul {
+    margin-top: 10px;
+}
+
+.box2 ul li {
+    padding: 12px 0;
+    list-style: none;
+    font-size: 16px;
+    text-align: justify;
+    display: flex;
+    transition: 0.5s;
+}
+
+.box2 ul li:hover {
+    transform: translateX(40px);
+    opacity: 1;
+}
+
+.box2 ul li:hover .link {
+    opacity: 1;
+}
+
+.box2 ul li:hover .logo {
+    rotate: 30deg;
+}
+
+.logo {
+    height: 32px;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-bottom: -10px;
+    transition: 0.5s;
+}
+
+.box2 a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.link{
+    height: 22px;
+    margin-left: 10px;
+    opacity: 0;
+    margin-right: 10px;
+    transition: 0.5s;
 }
 
 /*Bouttons*/
@@ -168,7 +290,7 @@ span {
     text-transform: uppercase;
     letter-spacing: 2.5px;
     font-weight: 500;
-    color: #fff ;
+    color: #fff;
     background-color: #402379;
     border: none;
     border-radius: 45px;
@@ -176,14 +298,14 @@ span {
     cursor: pointer;
     outline: none;
     margin-top: 60px;
-  }
-  
-  .btn:hover {
+}
+
+.btn:hover {
     background-color: #BDA0FF;
     color: #fff;
     transform: translateY(-7px);
-  }
-  
-  .btn:active {
+}
+
+.btn:active {
     transform: translateY(-1px);
-  }
+}
