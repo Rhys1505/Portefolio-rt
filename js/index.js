@@ -1,14 +1,12 @@
 //Acceuil
 var typed = new Typed(".auto-typed", {
   strings: [
+    "Rhys Trouvé",
+    "Développeur Web & IA",
+    "Étudiant en Intelligence Artificielle",
     "Développeur Full Stack",
-    "Artiste du CSS",
-    "Développeur Web",
-    "Maître du Web Responsive",
-    "Architecte du Code",
-    "Maestro du JavaScript",
-    "Concepteur de sites Web",
-    "Magicien du HTML",
+    "Passionné par Python et la Data",
+    "Concepteur de solutions numériques",
   ],
   typeSpeed: 70,
   backSpeed: 30,
@@ -67,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
         image.addEventListener("click", () => {
           const url = image.getAttribute("data-url");
           if (url) {
-            window.open(url, "_blank"); // Utilisez window.open avec '_blank' pour ouvrir dans un nouvel onglet
+            window.open(url, "_blank");
           }
         });
       });
@@ -82,5 +80,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
   exempleCarrousel.setControls();
   exempleCarrousel.useControls();
-  exempleCarrousel.addImageClickHandlers(); // Ajout du gestionnaire de clics sur les images
+  exempleCarrousel.addImageClickHandlers();
 });
